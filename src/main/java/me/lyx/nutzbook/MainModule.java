@@ -10,7 +10,7 @@ import org.nutz.mvc.ioc.provider.ComboIocProvider;
  */
 @SetupBy(value=MainSetup.class)
 @Modules(scanPackage=true)
-@IocBy(type=ComboIocProvider.class, args={"*js", "ioc/",
+@IocBy(type=ComboIocProvider.class, args={"*js", "ioc/","custom/",
         "*anno", "me.lyx.nutzbook",
         "*tx", // 事务拦截 aop
         "*async"})
